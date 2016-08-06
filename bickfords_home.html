@@ -40,13 +40,20 @@ homeElement = document.getElementById("home_link")
 
 homeElement.onclick = already_home
 
+function hideshow(more_about) {
+if (more_about.style.display=="block")
+more_about.style.display="none"
+else
+more_about.style.display="block"
+}
+
 </script>
 	
 <div id="about">
 		
   <p>Established in 1992 Bickfords Lawyers is an Australian family owned and operated law firm that has proven itself as a real alternative to the large corporate law firms.</p>
 
-  <p>We have the expert legal advice and experience to help you through what can be an overwhelming and stressful experience.</p> <a href="#">Continue Reading ...</a>
+  <p>We have the expert legal advice and experience to help you through what can be an overwhelming and stressful experience.</p> <a href="javascript:hideshow(document.getElementById('more_about'))">Continue Reading ...</a>
 
   <div id="more_about">
     <p>Our lawyers will guide and support you through the intricacies of the law so that you can make the best decisions for you, your family and business.</p>
