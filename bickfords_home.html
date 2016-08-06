@@ -41,10 +41,12 @@ homeElement = document.getElementById("home_link")
 homeElement.onclick = already_home
 
 function hideshow(more_about) {
-if (more_about.style.display=="block")
-more_about.style.display="none"
-else
-more_about.style.display="block"
+  console.log(more_about.style.display)
+  
+  if (more_about.style.display=="block")
+  more_about.style.display="none"
+  else
+  more_about.style.display="block"
 }
 
 </script>
